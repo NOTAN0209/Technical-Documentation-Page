@@ -1,7 +1,11 @@
+:root{
+    font-size: calc(1hw + 0.7em)
+}
+
 body{
   min-width: 290px;
   color: #4d4e53;
-  background-color: #ffffff;
+  background-color: #CC99FF;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -19,13 +23,13 @@ body{
 
 @media (max-width: 815px){
   #navbar {
-  background-color: white;
+  background-color: wheat;
   position: absolute;
   top: 0;
   padding: 0;
   margin: 0;
   width: 100%;
-  max-height: 275px;
+  height: 30%;
   border: none;
   z-index: 1;
   border-bottom: 2px solid;
@@ -33,15 +37,21 @@ body{
 }
 
 header {
-  color: black;
-  margin: 10px;
+  color: green;
+  margin: .6em 0;
+  padding: .5em 1.8em;
   text-align: center;
-  font-size: 1.8em;
-
+  font-size: 1.7em;
+  text-transform: uppercase;
+  background-color: black;
+}
+#navbar header{
+  margin:0;
+  padding: 0;
 }
 
 #main-doc header {
-  text-align: left;
+  text-align: center;
   margin: 0px;
 }
 
@@ -56,9 +66,10 @@ header {
   #main-doc {
   position: relative;
   margin-left: 0px;
-  margin-top: 270px;
+  margin-top: 320px;
   }
 }
+
 #navbar ul {
   height: 88%;
   padding: 0;
@@ -80,6 +91,22 @@ header {
   color: #4d4e53;
   text-decoration: none;
   cursor: pointer;
+}
+
+#navbar a:link{
+  color: :#1476bb;
+}
+
+#navbar a:visited{
+  background-color: :#1414bb;
+}
+
+#navbar a:hover{
+text-decoration: underline;
+}
+
+#navbar a:active{
+color:#b45514;
 }
 
 code {
